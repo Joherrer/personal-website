@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Projects
+{% endblock %}
+
+{% block main %}
+    
+    <!-- Container main area projects -->
+    <div class="container container-projects-page my-2 mb-3">
+
+        <!-- First row projects page -->
+        <div class="row px-5 px-sm-0">
+            <div class="col-12">
+                <div class="projects-page-title mb-4 mb-sm-5">
+                    <h1>Projects</h1>
+                </div>
+                <div class="projects-page-text">
+                    <span>These are some of the projects I developed that helped me to improve my programming skills.
+
+                        I have developed web applications using Python and Flask, with SQL to manage the data within the database system.
+
+                        I have also built static websites where I gained experience in front-end development using HTML, CSS, and JavaScript.</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Second row projects page -->
+        <div class="row projects-row px-5 px-sm-0 mt-5 mb-4">
+            <div class="col-12">
+
+                <!-- First project -->
+                <h3 class="projects-title mb-2" id="gcsf">Gold Coast Surf Forecast</h3>
+                <h5 class="projects-subtitle mb-4">Web app</h5>
+                <div class="projects-description mb-5">
+                    <p>Gold Coast Surf Forecast is a web application built with Python and Flask to offer real-time updates on surf conditions across all the prominent spots along the Gold Coast of Australia.
+
+                    The back-end of the application leverages the power of SQL and SQLAlchemy to manage the database system. 
+
+                    On the front-end, the interface of Gold Coast Surf Forecast was designed using HTML and CSS, combined with Jinja for template rendering.</p>
+                </div>
+                <!-- Carousel forecast -->
+                <div id="Carousel1" class="carousel slide carousel-fade mx-2 px-2 mx-lg-5 px-lg-5 mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-containter mx-2 px-2 mx-lg-5 px-lg-5">
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Carousel Images -->
+                            <div class="carousel-item active">
+                                <img src="/static/forecast/homepage.jpeg" class="d-block w-100 border border-4 rounded" alt="Homepage">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/forecast/user.jpeg" class="d-block w-100 border border-4 rounded" alt="User Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/forecast/forecast.jpeg" class="d-block w-100 border border-4 rounded" alt="Forecast Page">
+                            </div>
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#Carousel1" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#Carousel1" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#Carousel1" data-bs-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel arrows -->
+                            <a class="carousel-control-prev" href="#Carousel1" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#Carousel1" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <div class="forecast-links mt-3">
+                            Go to <a class="link projects-link text-decoration-none" href="#">Website</a>
+                            or <a class="link projects-link text-decoration-none" href="https://github.com/Joherrer/forecast.git">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-description text-lg-center mb-5">
+                    <p>With Gold Coast Surf Forecast users can create personalized accounts and save their favorite surf spots to a dedicated favorites page, allowing quick and easy access to detailed surf conditions specific to their preferences.
+
+                    The application is designed to provide real-time updates on surf conditions, including wave height, wind speed, tide times, and other critical metrics essential for surfers.</p>
+                </div>
+                <!-- programming languages icons -->
+                <div class="row language-icons mx-sm-5 px-sm-5 justify-content-center">
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image ms-2 ms-sm-3" style="background-image:url(/static/languages/python.png); background-size: 45px;" alt="Python"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/sql.png); background-size: 55px; margin-top: 20px; margin-left: 5px;" alt="SQL"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/html.png); background-size: 45px; margin-top: 4px; margin-left: 10px; " alt="HTML"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/css.png); background-size: 52px; margin-bottom: 3px; margin-left: 5px;" alt="CSS"></div>
+                    </div>
+                </div>
+
+                <!-- Second project -->
+                <h3 class="projects-title mt-5 mb-2" id="stocks">Stocks</h3>
+                <h5 class="projects-subtitle mb-4">Web app</h5>
+                <div class="projects-description mb-5">
+                    <p>Stocks is a web application where users can create a personalized account and manage a portfolio of stocks. I created Stocks as a project while completing Harvard's CS50 course. 
+                        
+                    This application is built using Python and Flask. The back-end of the application uses SQL and SQLAlchemy, allowing the management of a database system for each user account and their portfolio of stocks.
+                    
+                    On the front-end, the application's interface was designed using HTML and CSS, combined with Jinja for template rendering.</p>
+                </div>
+                <!-- Carousel stocks -->
+                <div id="Carousel2" class="carousel carousel-dark slide carousel-fade mx-2 px-2 mx-lg-5 px-lg-5 mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-containter mx-2 px-2 mx-lg-5 px-lg-5">
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Carousel Images -->
+                            <div class="carousel-item active">
+                                <img src="/static/stocks/login.jpeg" class="d-block w-100 border border-4 rounded" alt="Login Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/stocks/homepage.jpeg" class="d-block w-100 border border-4 rounded" alt="Homepage">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/stocks/buy.jpeg" class="d-block w-100 border border-4 rounded" alt="Buy Page">
+                            </div>
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#Carousel2" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#Carousel2" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#Carousel2" data-bs-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel arrows -->
+                            <a class="carousel-control-prev" href="#Carousel2" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#Carousel2" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <div class="stocks-links mt-3">
+                            Go to <a class="link projects-link text-decoration-none" href="#">Website</a>
+                            or <a class="link projects-link text-decoration-none" href="https://github.com/Joherrer/stocks.git">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-description text-lg-center mb-5">
+                    <p>This tool allows users to check real-time stock prices, and also lets them "buy" (with fictional money) and "sell" stocks by querying for stock prices. 
+                        
+                    Users will be able to see the total value of their portfolio and the transactions made within their accounts.</p>
+                </div>
+                <!-- programming languages icons -->
+                <div class="row language-icons mx-sm-5 px-sm-5 justify-content-center">
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image ms-2 ms-sm-3" style="background-image:url(/static/languages/python.png); background-size: 45px; margin-left: 18px;" alt="Python"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/sql.png); background-size: 55px; margin-top: 20px; margin-left: 5px;" alt="SQL"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/html.png); background-size: 45px; margin-top: 4px; margin-left: 10px;" alt="HTML"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/css.png); background-size: 52px; margin-bottom: 3px; margin-left: 5px;" alt="CSS"></div>
+                    </div>
+                </div>
+
+                <!-- Third project -->
+                <h3 class="projects-title mt-5 mb-2" id="personal">Personal</h5>
+                <h5 class="projects-subtitle mb-4">Website</h5>
+                <div class="projects-description mb-5">
+                    <p>The website you are now at is also one of my projects. I built this website 100% from scratch without using any pre-installed templates or web content management system.
+
+                    Building this website allowed me to learn some front-end development that I use to create web applications and other websites. 
+                    
+                    The site consists of four pages, built using HTML, CSS, and JavaScript.
+                    
+                    I designed its layout using Jinja and Bootstrap to ensure a clean code and responsive user experience.</p>
+                </div>
+                <!-- Carousel personal -->
+                <div id="Carousel3" class="carousel carousel-dark slide carousel-fade mx-2 px-2 mx-lg-5 px-lg-5 mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-containter mx-2 px-2 mx-lg-5 px-lg-5">
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Carousel Images -->
+                            <div class="carousel-item active">
+                                <img src="/static/personal/homepage.jpeg" class="d-block w-100 border border-4 rounded" alt="Homepage">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/personal/about.jpeg" class="d-block w-100 border border-4 rounded" alt="About Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/static/personal/contact.jpeg" class="d-block w-100 border border-4 rounded" alt="Contact Page">
+                            </div>
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#Carousel3" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#Carousel3" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#Carousel3" data-bs-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel arrows -->
+                            <a class="carousel-control-prev" href="#Carousel3" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#Carousel3" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <div class="personal-links mt-3">
+                            Go to <a class="link projects-link text-decoration-none" href="https://jose-herrera.onrender.com">Website</a>
+                            or <a class="link projects-link text-decoration-none" href="https://github.com/Joherrer/personal-website">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-description text-lg-center mb-5">
+                    <p>This personal website serves as an informational page where people can read about my education and have a look to some of the projects I have developed.
+
+                    Feel free to browse through the different sections to know more about my work and background.</p>
+                </div>
+                <!-- programming languages icons -->
+                <div class="row language-icons mx-sm-5 px-sm-5 justify-content-center">
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/html.png); background-size: 45px; margin-top: 4px; margin-left: 10px;" alt="HTML"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/css.png); background-size: 52px; margin-bottom: 3px; margin-left: 5px;" alt="CSS"></div>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+                        <div class="image language-icons-image" style="background-image:url(/static/languages/js.png); background-size: 74px; margin-top: 3px; margin-right: 10px;" alt="JS"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

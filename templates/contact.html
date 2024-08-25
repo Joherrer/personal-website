@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block main %}
+
+  <!-- Container main area contact -->
+  <div class="container contact-container d-flex flex-column justify-content-center">
+
+    <!-- First row (top) with three elements and icons (text) -->
+    <div class="row text-center mt-2 mb-2 mt-lg-0 mb-lg-4 pb-lg-4">
+      <!-- Title element -->
+      <div class="col-12 contact-title">GET IN TOUCH</div>
+      <!-- Phone element -->
+      <div class="col-12 phone">
+        <div><i class="bi bi-telephone"></i> +61 415 283 365</div>
+      </div>
+      <!-- Email element -->
+      <div class="col-12 email">
+        <div><i class="bi bi-envelope"></i> joherrer.dev@gmail.com</div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form id="contactForm" method="POST" action="/contact">
+      <!-- Second row (bottom) with two columns -->
+      <div class="row justify-content-center mt-4">
+        
+        <!-- First column (left) with three elements (Name, Email, Phone forms) -->
+        <div class="col-lg-6 px-5">
+          <div class="px-4 px-sm-0">
+            <!-- Name input element -->
+            <div class="name mb-3">
+              <label for="FormControlName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="FormControlName" name="name" placeholder="" required>
+            </div>
+            <!-- Email input element -->
+            <div class="email mb-3">
+              <label for="FormControlEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="FormControlEmail" name="email" placeholder="" required>
+            </div>
+            <!-- Phone input element -->
+            <div class="phone mb-3">
+              <label for="FormControlPhone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="FormControlPhone" name="phone" placeholder="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Second column (right) with two elements (Message form and Button) -->
+        <div class="col-lg-6 px-5">  
+          <div class="px-4 px-sm-0">
+            <!-- Message input element -->
+            <div class="message mb-3">
+              <label for="FormControlTextarea" class="form-label">Message</label>
+              <textarea class="form-control" id="FormControlTextarea" name="message" rows="6" required></textarea>
+            </div>
+            <!-- Submit button -->
+            <div class="submit d-flex justify-content-end me-2">
+              <button type="submit" class="btn btn-outline-dark" id="submitBtn">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+
+{% endblock %}

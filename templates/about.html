@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block main %}
+
+    <!-- Container main area about -->
+    <div class="container about-container my-2">
+
+        <!-- First row about page text -->
+        <div class="row px-5 px-sm-0">
+            <div class="col-12">
+                <div class="about-title mb-4 mb-sm-5">
+                    <h1>About me</h1>
+                </div>
+                <div class="about-text mb-5">
+                    <p>Originally from Madrid, Spain, I hold a Bachelor's degree in Commerce from the Complutense University of Madrid. 
+                    
+                    My interest in finance and the stock market began during my university years, which led me to complete the Stock and Financial Markets course at the BME Institute, located at Madrid's Stock Exchange.</p>
+
+                    <p>From a young age, I have been passionate about computers and technology. This passion inspired me to study about Computer Science and Programming, starting with the completion of Harvard's Introduction to Computer Science (CS50) course. 
+                    
+                    Since then, I have expanded my technical expertise, mastering various programming languages such as Python, SQL, and C.</p>
+                    
+                    <p>I am currently studying a Master's degree in Information Technology, with a major in Computer Science, at Queensland University of Technology (QUT) in Australia.</p>
+
+                    <p>In the future, I aim to further my studies in Cloud Computing and Software Development, focusing on their applications in the financial sector. 
+                    
+                    I believe that integrating advanced technology and finance will drive innovation and efficiency in the industry, and I am excited to contribute to this dynamic field.</p>
+                </div>        
+            </div>
+        </div>
+
+        <!-- Second row about with two columns -->
+        <div class="row about-lists px-5 px-sm-0">
+
+            <!-- First column with studies -->
+            <div class="col-12 col-md-6 d-flex justify-content-md-center mb-4 mb-md-0">
+                <div class="education" id="education">
+                    <!-- Studies text -->
+                    <p class="education-title">Education</p>
+                    <!-- Studies-list -->
+                    <ul class="education-list">
+                        <li class="list-item">Bachelor's Degree in Commerce - UCM</li>
+                        <li class="list-item">Master's Degree in IT (Computer Science) - QUT</li>
+                        <li class="list-item">Stock and Financial Markets course - BME Institute</li>
+                        <li class="list-item">Introduction to Computer Science (CS50) course - Harvard</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Second column with languages and tools -->
+            <div class="col-12 col-md-6 d-flex justify-content-md-center">
+                <div class="languages-tools">
+                    <!-- Languages and tools text -->
+                    <p class="languages-tools-title">Languages and Tools</p>
+                    <!-- Languages and tools list -->
+                    <ul class="languages-tools-list">
+                        <li class="list-item">Python</li>
+                        <li class="list-item">SQL</li>
+                        <li class="list-item">C</li>
+                        <li class="list-item">HTML/CSS</li>
+                        <li class="list-item">Git</li>
+                        <li class="list-item">Terminal (CLI)</li>
+                        <li class="list-item">Linux</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
